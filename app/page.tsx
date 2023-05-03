@@ -1,4 +1,4 @@
-import Trending from "./(shared)/Trending"
+import Trending from "./shared/Trending"
 
 export default function Home() {
   return (
