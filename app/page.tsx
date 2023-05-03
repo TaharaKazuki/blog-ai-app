@@ -1,4 +1,5 @@
-import Trending from "./shared/Trending"
+import Trending from "@/app/home/Trending"
+import Tech from "@/app/home/Tech"
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <Trending />
       <div className="md:flex gap-10 mb-5">
         <div className="basis-3/4">
+          <Tech />
           <div className="hidden md:block"></div>
         </div>
         <div className="basis-1/4"></div>

@@ -6,7 +6,7 @@ type Props = {
   className?: string
 }
 
-const Card = ({ className }: Props) => {
+const TrendingCard = ({ className }: Props) => {
   return (
     <Link
       className={`${className} sm:mt-0 sm:h-auto relative mt-7 block w-full h-96 hover:opacity-70`}
@@ -25,4 +25,4 @@ const Card = ({ className }: Props) => {
   )
 }
 
-export default Card
+export default TrendingCard
