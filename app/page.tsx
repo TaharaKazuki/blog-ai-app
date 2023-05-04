@@ -5,7 +5,18 @@ import Other from "@/app/shared/Other"
 import Subscribe from "@/app/shared/Subscribe"
 import Sidebar from "@/app/shared/Sidebar"
 
-export default function Home() {
+import { prisma } from "@/app/api/client"
+
+const getPosts = async () => {
+  const posts = await prisma.post.findMany()
+
+  return posts
+}
+
+export default async function Home() {
+  const posts = await getPosts()
+  console.info(`posts:`, posts)
+
   return (
     <main className="px-10 leading-7">
       <Trending />
