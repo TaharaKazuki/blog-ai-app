@@ -1,6 +1,7 @@
 import Trending from "@/app/home/Trending"
 import Tech from "@/app/home/Tech"
 import Travel from "@/app/home/Travel"
+import Other from "@/app/shared/Other"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <div className="basis-3/4">
           <Tech />
           <Travel />
+          <Other />
           <div className="hidden md:block"></div>
         </div>
         <div className="basis-1/4"></div>
