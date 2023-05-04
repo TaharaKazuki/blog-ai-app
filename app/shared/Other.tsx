@@ -3,7 +3,7 @@ import Card from "@/app/shared/Card"
 
 const Other = () => {
   return (
-    <section>
+    <section className="pt-4 mb-16">
       <hr className="border-1" />
       <p className="font-bold text-2xl my-8">Other Trending Posts</p>
       <div className="sm:grid grid-cols-2 gap-16">
